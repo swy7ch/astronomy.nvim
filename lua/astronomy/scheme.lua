@@ -8,6 +8,11 @@
 local M = {}
 local g = vim.g
 
+local static = {
+        coq_checked             ="#36704f",
+        coq_sent                ="#4b4b4b",
+}
+
 -- Load terminal colors
 --@param tab table: scheme colors to apply
 local function terminal_colors(tab)
@@ -199,8 +204,8 @@ function M.load_colors(scheme)
                 ----------------
                 -- COQ COLORS --
                 ----------------
-                CoqtailChecked                  = { fg = scheme.none,           bg = scheme.darkgreen,          scheme.none },
-                CoqtailSent                     = { fg = scheme.none,           bg = scheme.darkgrey,           scheme.none },
+                CoqtailChecked                  = { fg = scheme.none,           bg = static.coq_checked,          scheme.none },
+                CoqtailSent                     = { fg = scheme.none,           bg = static.coq_sent,             scheme.none },
         }
 
         terminal_colors(scheme)
