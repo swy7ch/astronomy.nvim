@@ -201,6 +201,14 @@ function M.load_colors(scheme)
                 DiagnosticFloatingHint          = { link = "DiagnosticVirtualTextHint" },
                 DiagnosticSignHint              = { link = "DiagnosticVirtualTextHint" },
 
+                --------------------
+                -- LUASNIP COLORS --
+                --------------------
+                LuaSnipInactive                 = { link = "Comment" },
+                LuaSnipChoice                   = { fg = scheme.yellow,         bg = scheme.none,               scheme.none },
+                LuaSnipFunction                 = { fg = scheme.magenta,        bg = scheme.none,               scheme.none },
+                LuaSnipInsert                   = { fg = scheme.blue,           bg = scheme.none,               scheme.none },
+
                 ----------------
                 -- COQ COLORS --
                 ----------------
