@@ -12,11 +12,11 @@ local M = {}
 -- Setup function to load the colorscheme
 --@param opts table: custom options to be applied to the editor
 function M.setup(opts)
-        utils.setup_scheme(opts)
+    utils.setup_scheme(opts)
 end
 
-M.toggle_variant        = functions.toggle_variant
-M.random_variant        = functions.random_variant
-M.set_variant           = functions.set_variant
+M.toggle_variant    = functions.toggle_variant
+M.random_variant    = functions.random_variant
+M.set_variant       = functions.set_variant
 
 return M
