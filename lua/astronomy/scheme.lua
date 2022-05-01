@@ -210,6 +210,18 @@ function M.load_colors(scheme)
                 LuaSnipInsert                   = { fg = scheme.blue,           bg = scheme.none,               scheme.none },
 
                 ----------------
+                -- CMP COLORS --
+                ----------------
+                CmpItemKindVariable             = { fg = scheme.none,       bg = scheme.none,               scheme.none },
+                CmpItemKindClass                = { fg = scheme.yellow,     bg = scheme.none,               scheme.none },
+                CmpItemKindInterface            = { link = "CmpItemKindClass" },
+                CmpItemKindModule               = { link = "CmpItemKindClass" },
+                CmpItemKindText                 = { fg = scheme.green,      bg = scheme.none,               scheme.none },
+                CmpItemKindKeyword              = { fg = scheme.orange,     bg = scheme.none,               scheme.none },
+                CmpItemKindFunction             = { fg = scheme.blue,       bg = scheme.none,               scheme.none },
+                CmpItemKindMethod               = { link = "CmpItemKindFunction" },
+
+                ----------------
                 -- COQ COLORS --
                 ----------------
                 CoqtailChecked                  = { fg = scheme.none,           bg = static.coq_checked,          scheme.none },
